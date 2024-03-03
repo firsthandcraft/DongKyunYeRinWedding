@@ -1,0 +1,19 @@
+body{}
+#scene_wrapper {
+    line-height: 0;
+    position: relative;
+    min-height: 557px;
+  }
+  #scene_slider {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    /* top: 244px; */
+  }
+  #skin_info {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 2;
+  }
