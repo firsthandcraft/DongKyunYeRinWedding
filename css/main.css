@@ -13,7 +13,7 @@
 #scene_wrapper {
     line-height: 0;
     position: relative;
-    min-height: 557px;
+    min-height: 767px;
   }
   #scene_slider {
     position: absolute;
@@ -88,4 +88,12 @@
 .calendar .dday > span {
   background-color: #dfc9bb;
   color: #524441;
+}
+.tel_ask_btn {
+  background-color: #dcc5b5;
+  background-image: url(./img/icon_contact_white_tel.png);
+  background-position: 12px center;
+  background-repeat: no-repeat;
+  background-size: auto 15px;
+  color: #ffffff;
 }
