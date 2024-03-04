@@ -60,3 +60,32 @@
   padding-left: 5px;
   padding-right: 5px;
 }
+.calendar_ym {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 14px;
+    text-align: center;
+    font-family: 'SeoulHangangM';
+}
+.calendar th, .calendar td {
+  height: 36px;
+  font-family: 'Spoqa Han Sans';
+  font-weight: 300;
+  text-align: center;
+  word-break: break-all;
+}
+.calendar .dday > span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: #dfc9bb;
+  border-radius: 100%;
+  color: #524441;
+  text-align: center;
+  line-height: 25px;
+  font-size: 12px;
+}
+.calendar .dday > span {
+  background-color: #dfc9bb;
+  color: #524441;
+}

@@ -40,6 +40,7 @@ table {
     border-spacing: 2px;
     border-color: gray;
 }
+div{display: block;}
 /*  */
 .section {
     padding-bottom: 64px;
@@ -84,4 +85,23 @@ tbody {
     margin-bottom: 20px;
     padding: 25px;
     border-radius: 10px;
+}
+.calendar th, .calendar .dday > span {
+    font-size: 12px;
+}
+.calendar th {
+    color: #c8b39e;
+}
+table.calendar {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+.calendar th, .calendar td {
+    height: 36px;
+    font-family: 'Spoqa Han Sans';
+    font-weight: 300;
+    text-align: center;
+    word-break: break-all;
 }
