@@ -47,7 +47,16 @@
 }
 #insa_family_tbl {
   border-spacing: 0 10px;
+  
+}
+
+.insa_rel_block, .insa_ord_block,#insa_family_tbl td span, #insa_family_tbl td div{
+  font-family: 'SeoulHangangM';
 }
 .insa_parent_block div {
   line-height: 20px;
+}
+.insa_rel_block, .insa_ord_block {
+  padding-left: 5px;
+  padding-right: 5px;
 }

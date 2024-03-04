@@ -5,16 +5,20 @@
     src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
     src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
    }
-  
+   @font-face {
+    font-family: 'SeoulHangangL';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
 * {
     -webkit-text-size-adjust: none;
-    font-family: 'Nanum Barun Gothic';
+    font-family: 'NanumBarunGothic';
     font-weight: 300;
 }
 body { 
     margin: 0;
     padding: 0;
-    font-family: 'NanumBarunGothic';
 }
 ul, li { 
     list-style: none;
@@ -51,7 +55,7 @@ table {
     justify-content: space-between;
     padding-bottom: 18px;
   }
-  .section_title {
+  .section_title {    width: 100%;
     border-bottom: 1px solid #ded0c5;
     color: #544741;
     font-size: 22px;
@@ -63,9 +67,21 @@ table {
 }
 .insa_text, #insa_family_tbl td, #insa_family_tbl td span {
     font-size: 14px;
+   
 }
 tbody {
     display: table-row-group;
     vertical-align: middle;
     border-color: inherit;
+}
+#insa_family_tbl td span, #insa_family_tbl td div {
+    white-space: pre;
+   
+}
+.calendar_inner {
+    background-color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 10px;
 }
