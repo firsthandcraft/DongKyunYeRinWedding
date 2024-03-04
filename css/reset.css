@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+   }
+  
+* {
+    -webkit-text-size-adjust: none;
+    font-family: 'Nanum Barun Gothic';
+    font-weight: 300;
+}
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'NanumBarunGothic';
+}
+ul, li { 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+a, body, ul, li, div, span, table, tbody, tr, th, td, form, input, textarea, select, button {
+    box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+    font-family: 'SeoulHangangJungL'
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+/*  */
+.section {
+    padding-bottom: 64px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 25px;
+}
+.section_header {
+    border: none;
+    display: flex;
+    font-size: 13px;
+    font-style: italic;
+    justify-content: space-between;
+    padding-bottom: 18px;
+  }
+  .section_title {
+    border-bottom: 1px solid #ded0c5;
+    color: #544741;
+    font-size: 22px;
+    font-weight: 500;
+    padding-bottom: 50px;
+    padding-top: 52px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.insa_text, #insa_family_tbl td, #insa_family_tbl td span {
+    font-size: 14px;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}

@@ -1,4 +1,15 @@
-body{}
+@font-face {
+  font-family: 'SeoulHangangM';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+ @font-face {
+  font-family: 'SeoulHangangL';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
 #scene_wrapper {
     line-height: 0;
     position: relative;
@@ -17,3 +28,26 @@ body{}
     width: 100%;
     z-index: 2;
   }
+  .section:nth-child(odd) {
+    background-color: #fdf8f4;
+}
+.section_header {
+  font-size: 12px;
+}
+.section_title {
+  font-size: 20px;
+      border-bottom: 1px solid #ddd0c7;
+      color: #544741;
+      font-family: 'SeoulHangangL';
+}
+.insa_text {
+  line-height: 24px;
+  margin-bottom: 30px;
+  font-family: 'SeoulHangangM';
+}
+#insa_family_tbl {
+  border-spacing: 0 10px;
+}
+.insa_parent_block div {
+  line-height: 20px;
+}
