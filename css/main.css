@@ -200,3 +200,36 @@
 .photo_reply_counter {
   line-height: 100%; padding-left: 7px; padding-right: 15px;
 }
+/* d안내 */
+.notice_row {
+  background-color: #f1e0eb;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.notice_row_no {
+  width: 20%;
+  color: #e5d3c5;
+  font-size: 42px;
+  font-style: italic;
+  color: #c08cc2;
+}
+.notice_txt_wrapper {
+  width: 80%;
+}
+.notice_txt_wrapper div {
+  font-size: 12px;
+}
+.notice_row_txt_title {
+  padding-bottom: 3px;
+  height: 28px;
+  line-height: 28px;
+  position: relative;
+}
+.notice_row_txt {
+  font-size: 14px;
+  line-height: 24px;
+  word-break: break-all;
+}
