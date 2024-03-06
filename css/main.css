@@ -97,3 +97,106 @@
   background-size: auto 15px;
   color: #ffffff;
 }
+#photo_list_wrapper {
+  overflow: hidden;
+  display: inline-block;
+  margin: auto;
+  padding-left: 2px;
+}
+.photo_wrapper {
+  width: 33.33%;
+  position: relative;
+}
+.photo_wrapper {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  display: inline;
+  position: relative;
+  line-height: 0px;
+  padding-right: 2px;
+  margin-bottom: 2px;
+}
+/* 갤러리모달 */
+#photo_view {
+  /* !! Do not set display none here !! */
+  background-color: white;  /* background-color: #b5b7ba; */
+  padding-bottom: 170px;  /* reply_add_wrapper height is 140px */
+}
+#photo_view_top {
+  background-color: #262b3e;
+  height: 45px;
+  vertical-align: middle;
+  position: relative;
+}
+#photo_view_title {
+  color: #999999;
+  font-size: 14px;
+  font-weight: 400;
+  height: 45px;
+  line-height: 48px;
+  padding-left: 18px;
+}
+
+#photo_view_top_dummy {
+  height: 45px;
+  display: none;
+}
+
+#photo_view_close_button {
+  cursor: pointer;
+  height: 45px;
+  width: auto;
+  position: absolute; right: 0; top: 0;
+}
+#photo_view_menu_open_button {
+  cursor: pointer;
+  width: auto;
+  height: 100%;
+  position: absolute; right: 0; top: 0;
+}
+.photo_view_img_wrapper {
+  position: relative;
+}
+.photo_view_swipe_guide {
+  height: 50px;
+  width: auto;
+  position: absolute;
+  top: 38%;
+  z-index: 99;
+  display: none;
+}
+
+
+
+
+#photo_view_console td {
+  line-height: auto;
+  font-size: 14px;
+}
+
+.swiper-slide {
+  box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+}
+
+.photo_view_mid {
+  box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;
+  border-bottom: 1px solid #eaeaea;
+  height: 55px;
+  line-height: 55px;
+  position: relative;
+}
+.photo_view_slide_button {
+  height: 19px;
+  position: absolute;
+  top: 17px;
+}
+
+.photo_view_memo {
+  font-size: 12px;
+  padding-top: 20px;
+}
+.photo_reply_counter {
+  line-height: 100%; padding-left: 7px; padding-right: 15px;
+}
