@@ -5,7 +5,15 @@ $(document).ready(function(){
 			center: new kakao.maps.LatLng(37.51684746591705, 126.72214167109121),
 			level: 3
 		};
+    var markerPosition  = new kakao.maps.LatLng(37.51684746591705, 126.72214167109121); 
 
+    // 마커를 생성합니다
+    var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+    
+    // 마커가 지도 위에 표시되도록 설정합니다
+    marker.setMap(map);
 		var map = new kakao.maps.Map(container, options);
     var sudoSlider = $("#scene_slider").sudoSlider({
     auto:true,
