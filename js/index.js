@@ -57,5 +57,7 @@ $(document).ready(function(){
     }));
     });
     $("#effectCounter").text(count);
-  
+ 
+    
+    
 });

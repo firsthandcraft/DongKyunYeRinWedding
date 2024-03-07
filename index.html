@@ -231,7 +231,7 @@
 				<div>웨스턴펠리스</div>
 				<div>인천 부평구 부평대로278번길 16</div>
 				<div class="mat_tel_btn">032-524-5000</div>
-				<a href="tel:010-4604-5004">
+				<a href="tel:032-524-5000">
 				  <span class="tel_ask_btn">전화문의 </span>
 				</a>
 			  </div>
@@ -285,9 +285,14 @@
             <li class="name_block name_a1">박동균</li>
             <li class="bank_txt_view_btn"
                 data-family_group_type="a"
-                data-bank_name="카카오뱅크"
-                data-bank_num="3333114162673"
+                data-bank_name="신한은행"
+                data-bank_num="110436734334"
             >
+			<p class="box01">
+				<input id="myInput" value="1번 텍스트 복사하기" readonly>
+				<button onclick="copy_to_clipboard()"><img src="https://blog.kakaocdn.net/dn/N1wUc/btqIl7XZtKM/b44qX9Six1vczz2ISWj4LK/img.png" alt="복사하기">
+				</button>
+			</p>
                 <span>계좌</span>
             </li>
         </ul>
@@ -298,7 +303,7 @@
             <li class="bank_txt_view_btn"
                 data-family_group_type="a"
                 data-bank_name="신한은행"
-                data-bank_num="110226697284"
+                data-bank_num="110436734334"
             >
                 <span>계좌</span>
             </li>
@@ -337,5 +342,13 @@ function photo_view(element) {
 	var modalBody = document.querySelector('.modal-body');
 	modalBody.innerHTML = '<img src="' + element.src + '" alt="사진">';
 }
+ //복사
+ function copy_to_clipboard() { 
+     var copyText = document.getElementById('myInput');
+     copyText.select();
+     copyText.setSelectionRange(0, 99999);
+     document.execCommand("Copy");
+     alert('복사되었습니다, 감사합니다.');
+    }
 </script>
 </html>
