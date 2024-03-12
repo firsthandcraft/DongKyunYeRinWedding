@@ -10,10 +10,11 @@
   font-weight: bold;
   font-style: normal;
 }
+#wrapper{width: 375px;margin: auto;}
 #scene_wrapper {
     line-height: 0;
     position: relative;
-    min-height: 767px;
+    min-height: 557px;
   }
   #scene_slider {
     position: absolute;
@@ -35,19 +36,24 @@
   font-size: 12px;
 }
 .section_title {
-  font-size: 20px;
+  text-align: center;
+      font-size: 20px;
       border-bottom: 1px solid #ddd0c7;
       color: #544741;
       font-family: 'SeoulHangangL';
 }
 .insa_text {
-  line-height: 24px;
+  text-align: center;
+  line-height: 30px;
   margin-bottom: 30px;
   font-family: 'SeoulHangangM';
 }
+.insa_self_block{padding-left: 10px; }
+.insa_self_block span{font-weight: 600;color: #211b18;}
+.parent_name{padding:4px 0;}
 #insa_family_tbl {
   border-spacing: 0 10px;
-  
+  margin: 0 auto;
 }
 
 .insa_rel_block, .insa_ord_block,#insa_family_tbl td span, #insa_family_tbl td div{
@@ -213,7 +219,7 @@
   width: 20%;
   color: #e5d3c5;
   font-size: 42px;
-  font-style: italic;
+  font-style: normal;
   color: #c08cc2;
 }
 .notice_txt_wrapper {

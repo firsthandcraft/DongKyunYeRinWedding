@@ -52,7 +52,7 @@ div{display: block;}
     border: none;
     display: flex;
     font-size: 13px;
-    font-style: italic;
+    font-style: normal;
     justify-content: space-between;
     padding-bottom: 18px;
   }
@@ -61,10 +61,10 @@ div{display: block;}
     color: #544741;
     font-size: 22px;
     font-weight: 500;
-    padding-bottom: 50px;
-    padding-top: 52px;
+    padding-bottom: 20px;
+    padding-top: 34px;
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 .insa_text, #insa_family_tbl td, #insa_family_tbl td span {
     font-size: 14px;

@@ -40,7 +40,8 @@
 	var map_use_online = '1';
 	var own_hash = '1706432969';
 </script>
-<body>
+<body> 
+	<div id="wrapper">
 	<!-- 메인이미지 -->
 	<div id="scene_wrapper">
 		<div id="scene_slider">
@@ -98,7 +99,7 @@
 	</div>
 	<!-- 날짜 -->
 	<div class="section">
-	<div class="section calendar_section" id="calendar_row" data-section="calendar">
+	<div class=" calendar_section" id="calendar_row" data-section="calendar">
 		<div class="section_header">
 			<div class="section_header_day day_title_wedding_invit"> wedding invitation </div>
 			<div class="section_header_day day_title_date"> date. </div>
@@ -106,14 +107,7 @@
 		</div>
 		<div class="section_body_radius">
 			<div class="calendar_wrapper" >
-				<ul class="calendar_title section_title">
-					<li class="section_title_img">
-						<!--background img 이용 -->
-					</li>        
-					<li>
-					날짜<span class="calendar_title_hide">를 확인하세요</span>
-					</li>
-				</ul>
+				<h2 class="section_title">날짜</h2>
 				<div id="calendar">
 					<div class="calendar_inner">
 						<div class="calendar_ym">2024.06 </div>
@@ -227,11 +221,12 @@
 </div>
 	<!-- 오시는길 -->
 	<div class="section" id="map_section" data-section="map">
+		<h2 class="section_title">오시는 길</h2>
 			<ul class="map_title section_title">
 				<li class="section_title_img">
 
 				</li>
-				<li>오시는 길
+				<li>
 					<div id="map" style="height:400px;"></div>
 				</li>
 			  </ul>
@@ -246,40 +241,30 @@
 			  </div>
 			  <div id="map_text">
 				<div class="map_text_row">
-					<div style="font-size:15px;"> 지하철</div>
-					<div style="font-size:12px;">7호선 상동역 하차 1번 출구 … 도보 약 8분</div>
+					<div style="font-size:15px;">🚋 지하철</div>
+					<div style="font-size:12px;">1. 1호선(인천방면) 부평역 하차 후 인천지하철로 환승(귤현, 계양방면)</div>
+					<div style="font-size:12px;">2. 인천지하철 갈산역②번 출구로 나오세요.
+					<br/>
+					※인천시외버스터미널에서 인천지하철 이용 (부평, 귤현, 계양방면)
+					</div>
 				</div>
 				<div class="map_text_row">
-					<div style="font-size:15px;"> 자가용</div>
-					<div style="font-size:12px;"> 지하주차장 빠른 연결통로<br /><br />
-						* B1층 - 3&#44;4&#44;5번 기둥<br />
-						* B2층 - 3&#44;4&#44;5&#44;6&#44;17&#44;18번 기둥<br />
-						* B3층 - 3&#44;4&#44;5&#44;6&#44;27번 기둥 
+					<div style="font-size:15px;">🚌버스(대중교통 이용시 대우자동차 정문앞/ 갈산역 하차)</div>
+					<div style="font-size:12px;">일반버스 : 90 간선버스 12, 30, 34, 67-1<br/>
+						지선버스 555, 584-1, 526<br/>
+						시외버스 1400, 3000, 5000, 9500, 3030 = 주차안내<br/>
+						하객주차장 : 부평 우림라이온스밸리 주차장(인천시 부평구 부평대로 283)<br/>
+						갈산역 공영주차장<br/>
+						지하 2층 A구역에서 갈산역 방향으로 이용하여 갈산역 2번 출구로 나오세요.<br/>
+						웨스턴팰리스 웨딩하우스 (구, 부평관광호텔)<br/>
+						(032)524-5000 인천광역시 부평구 부평대로278번길 16<br/>
+						(구 주소: 인천광역시 부평구 갈산동 178-1)
 					</div>
 				</div>
 			  </div>
 
 	</div>
-	<!-- 안내사항 -->
-	<div class="section">
-		<div class="section_header">
-			<h2 class="section_title">안내사항</h2>
-		</div>
-		<div class="section_wrapper"> 
-			<div class="notice_row_wrapper">
-				<div class="notice_row">                
-					<div class="notice_row_no">01</div>
-					<div class="notice_txt_wrapper">
-						<div class="notice_row_txt_title">주의사항</div>
-						<div class="notice_row_txt">
-							자차 이용시 근처 도로가 혼잡할 수 있으니&#44; 이 점 양해 부탁드립니다.                        
-						</div>
-					</div>                
-			  </div>
-			</div>
-		</div>
-	</div>
-	</div>
+
 	<!-- 축하마음전하기 -->
 	<div class="section"> 
 		<div class="section_header">
@@ -353,7 +338,9 @@
     
         
 
-</div>
+ </div>
+
+
 	</div>
 </body>
 <script>
