@@ -313,6 +313,15 @@ border-radius: 30px;
   border-bottom-left-radius: 10px;
   font-family: 'SeoulHangangJungL';
 }
+.bank_family_group_block > li {
+  height: 43px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 43px;
+  padding-left: 15px;
+  font-family: 'SeoulHangangJungL';
+}
+.bank_family_group_block > li:first-child {  border-bottom: 1px solid #a7adbb;}
 .family_members {
   height: 42px;
   border-bottom: 1px solid #a7adbb;
@@ -337,12 +346,11 @@ border-radius: 30px;
   word-break:  keep-all;
   white-space: nowrap;
 }
-#mask{ display: none;}
+/* #mask{ display: none;} */
 #bank_popup {
-  padding: 20px;
+  padding-top: 30px;
   width: 75%;
   background-color: white;
- 
   font-size: 16px;
   position: fixed;
   left: 50%;
@@ -352,7 +360,6 @@ border-radius: 30px;
 }
 #bank_pop_title {
   font-size: 18px;
-  margin-top: 30px;
   text-align: center;
 }
 #bank_pop_notice {
@@ -364,16 +371,22 @@ border-radius: 30px;
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .mcard_button2_row {
+  display: flex;
   height: 36px;
   margin-top: 50px;
   line-height: 36px;
 }
+.mcard_button2_row div{width:50%;text-align: center;}
 #bank_pop_btns > div {
   height: 42px;
   line-height: 42px;
 }
-
+.mcard_button2{
+  background-color: #f5f5f7;
+  color: #7f838c;
+}
 .mcard_button2_on {
   background-color: #fcd6d7;
   color: #534741;

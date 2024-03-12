@@ -280,7 +280,7 @@
 			<h2 class="section_title">축하의 마음 전하기</h2>
 		</div>
 		<div class="bank_family_group_block bank_family_group_block_a family_group_tbl"data-type="a" data-side="a">
-			<ul class="family_members family_member_a family_member_a1" data-side="a">
+			<ul class="family_members family_member_a family_member_a1" data-side="a" onclick="bank_view('groom')">
 				<li class="name_block name_a1">박동균</li>
 				<li class="bank_txt_view_btn"
 					data-family_group_type="a"
@@ -290,36 +290,23 @@
 					<span>계좌</span>
 				</li>
 			</ul>
-			<ul class="family_members family_member_a family_member_a2" data-side="a">
+			<ul class="family_members family_member_a family_member_a2" data-side="a" onclick="bank_view('bride')">
 				<li class="name_block name_a2">남예린</li>
 				<li class="bank_txt_view_btn"
 					data-family_group_type="a"
 					data-bank_name="신한은행"
-					data-bank_num="110436734334"
-				>
+					data-bank_num="110436734334">
 					<span>계좌</span>
 				</li>
 			</ul>
 		</div>
     </div>
 	<!-- 계좌 팝업 -->
-	<div id="mask" style="position: fixed; z-index: 10; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0.4); cursor: pointer; width: 100%; height: 100%;">
+	<div id="mask" class="hidden" style="position: fixed; z-index: 10; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0.4); cursor: pointer; width: 100%; height: 100%;">
 		<div id="bank_popup" class="mask_over">
-			<div id="bank_pop_title"></div>
+			<div class="bank_content">
 
-			<div id="bank_pop_notice">
-				복사 버튼 클릭 시, 복사됩니다.
 			</div>
-		
-			<div id="bank_pop_txts">
-						
-				<ul class="bank_family_group_block">
-					<li id="bank_pop_txt_unm"></li>
-					<li id="bank_pop_txt_acc"></li>
-				</ul>
-		
-			</div>
-		
 			<div id="bank_pop_btns" class="mcard_button2_row">
 				<div class="mcard_button2 mcard_button2_on" id="bank_pop_copy_btn">
 					복사
@@ -343,15 +330,24 @@ function openModal() {
 	document.getElementById('modal').classList.remove('hidden');
 	document.body.classList.add('overflow-hidden');
 }
+function openBank() {
+	document.getElementById('mask').classList.remove('hidden');
+	document.body.classList.add('overflow-hidden');
+}
 
 // 모달 닫기 함수
 function closeModal() {
 	document.getElementById('modal').classList.add('hidden');
 	document.body.classList.remove('overflow-hidden');
 }
+function closeBank() {
+	document.getElementById('mask').classList.add('hidden');
+	document.body.classList.remove('overflow-hidden');
+}
 
 // 모달 닫기 버튼에 이벤트 리스너 추가
 document.getElementById('modal-close').addEventListener('click', closeModal);
+document.getElementById('bank_pop_close_btn').addEventListener('click', closeBank);
 
 // 이미지를 클릭했을 때 모달 열기
 function photo_view(element) {
@@ -360,13 +356,42 @@ function photo_view(element) {
 	var modalBody = document.querySelector('.modal-body');
 	modalBody.innerHTML = '<img src="' + element.src + '" alt="사진">';
 }
+function bank_view(element) {
+	openBank();
+	// 모달 내용 설정 예시: 이미지
+	var modalBody = document.querySelector('.bank_content');
+	if(element== 'bride' ){
+		modalBody.innerHTML = 	`<div id="bank_pop_title">신부측 계좌번호</div>
+			<div id="bank_pop_notice">
+				복사 버튼 클릭 시, 복사됩니다.
+			</div>
+			<div id="bank_pop_txts">
+				<ul class="bank_family_group_block" onclick="copy_to_clipboard('110-522-193955')>
+					<li id="bank_pop_txt_unm">남예린</li>
+					<li id="bank_pop_txt_acc">신한 110-522-193955</li>
+				</ul>
+			</div>`;
+	}else{
+	modalBody.innerHTML = `<div id="bank_pop_title">신랑측 계좌번호</div>
+			<div id="bank_pop_notice">
+				복사 버튼 클릭 시, 복사됩니다.
+			</div>
+			<div id="bank_pop_txts">
+				<ul class="bank_family_group_block"  onclick="copy_to_clipboard('110-359-913109')">
+					<li id="bank_pop_txt_unm">박동균</li>
+					<li id="bank_pop_txt_acc">신한 110-359-913109</li>
+				</ul>
+			</div>`;
+	}
+}
  //복사
- function copy_to_clipboard() { 
-     var copyText = document.getElementById('myInput');
-     copyText.select();
-     copyText.setSelectionRange(0, 99999);
-     document.execCommand("Copy");
+ function copy_to_clipboard(e) { 
+     var copyText = document.getElementById('bank_pop_txt_acc');
+     e.select();
+     e.setSelectionRange(0, 99999);
+     e.execCommand("Copy");
      alert('복사되었습니다, 감사합니다.');
+	 closeBank();
     }
 </script>
 </html>
