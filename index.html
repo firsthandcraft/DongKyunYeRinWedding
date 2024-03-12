@@ -280,28 +280,17 @@
 		<div class="section_header">
 			<h2 class="section_title">축하의 마음 전하기</h2>
 		</div>
-		<div class="bank_family_group_block bank_family_group_block_a family_group_tbl"
-    data-type="a" data-side="a"
->
-   
-        
+		<div class="bank_family_group_block bank_family_group_block_a family_group_tbl"data-type="a" data-side="a">
         <ul class="family_members family_member_a family_member_a1" data-side="a">
             <li class="name_block name_a1">박동균</li>
             <li class="bank_txt_view_btn"
                 data-family_group_type="a"
                 data-bank_name="신한은행"
-                data-bank_num="110436734334"
-            >
-			<p class="box01">
-				<input id="myInput" value="1번 텍스트 복사하기" readonly>
-				<button onclick="copy_to_clipboard()"><img src="https://blog.kakaocdn.net/dn/N1wUc/btqIl7XZtKM/b44qX9Six1vczz2ISWj4LK/img.png" alt="복사하기">
-				</button>
-			</p>
+                data-bank_num="110436734334">
+			
                 <span>계좌</span>
             </li>
         </ul>
-    
-        
         <ul class="family_members family_member_a family_member_a2" data-side="a">
             <li class="name_block name_a2">남예린</li>
             <li class="bank_txt_view_btn"
@@ -314,34 +303,37 @@
         </ul>
     
 <!-- 계좌 팝업 -->
-<div id="bank_popup" class="mask_over">
+<div id="mask" style="position: fixed; z-index: 10; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0.4); cursor: pointer; width: 100%; height: 100%;">
+		<div id="bank_popup" class="mask_over">
+		<div id="bank_pop_title"></div>
 
-    <div id="bank_pop_title"></div>
+		<div id="bank_pop_notice">
+			복사 버튼 클릭 시, 복사됩니다.
+		</div>
+	
+		<div id="bank_pop_txts">
+					
+			<ul class="bank_family_group_block">
+				<li id="bank_pop_txt_unm"></li>
+				<li id="bank_pop_txt_acc"></li>
+			</ul>
+	
+		</div>
+	
+		<div id="bank_pop_btns" class="mcard_button2_row">
+			<div class="mcard_button2 mcard_button2_on" id="bank_pop_copy_btn">
+				복사
+			</div>
+			<div class="mcard_button2" id="bank_pop_close_btn">
+				닫기
+			</div>
+		</div>
+	</div>
+    
+ </div>
 
-    <div id="bank_pop_notice">
-        복사 버튼 클릭 시, 복사됩니다.
-    </div>
-
-    <div id="bank_pop_txts">
-                
-        <ul class="bank_family_group_block">
-            <li id="bank_pop_txt_unm"></li>
-            <li id="bank_pop_txt_acc"></li>
-        </ul>
-
-    </div>
-
-    <div id="bank_pop_btns" class="mcard_button2_row">
-        <div class="mcard_button2 mcard_button2_on" id="bank_pop_copy_btn">
-            복사
-        </div>
-        <div class="mcard_button2" id="bank_pop_close_btn">
-            닫기
-        </div>
-    </div>
 
 
-</div>        </div>
 
         
        

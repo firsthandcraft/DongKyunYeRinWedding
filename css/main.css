@@ -294,3 +294,86 @@ border-radius: 30px;
 .map_text_row{margin-bottom:20px;}
 .map_text_row div{margin:6px 0;}
 .map_text_row span{display:block;font-size: 11px;}
+/* 계좌 */
+.bank_family_group_block .family_member_a:first-of-type, .bank_family_group_block .family_member_b:first-of-type {
+  display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    line-height: 42px;
+    padding-left: 12px;
+  border-width: 1px 1px 1px 1px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-color: #a7adbb;
+    font-family: 'SeoulHangangJungL';
+}
+.bank_family_group_block .family_member_a:last-of-type, .bank_family_group_block .family_member_b:last-of-type {
+  border-width: 1px 1px 1px 1px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-family: 'SeoulHangangJungL';
+}
+.family_members {
+  height: 42px;
+  border-bottom: 1px solid #a7adbb;
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+  line-height: 42px;
+  padding-left: 12px;
+  font-family: 'SeoulHangangJungL';
+}
+
+.bank_txt_view_btn {
+  border-left: 1px solid #a7adbb;
+  cursor: pointer;
+  font-size: 15px;
+  border-left: 1px solid #a7adbb;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+/* 계좌 */
+#bank_pop_txt_acc {
+  word-break:  keep-all;
+  white-space: nowrap;
+}
+#bank_popup {
+  padding: 20px;
+  width: 75%;
+  background-color: white;
+  /* display: none; */
+  font-size: 16px;
+  position: fixed;
+  left: 50%;
+  top: 100px;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+#bank_pop_title {
+  font-size: 18px;
+  margin-top: 30px;
+  text-align: center;
+}
+#bank_pop_notice {
+  margin-top: 20px;
+  text-align: center;
+}
+#bank_pop_txts {
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.mcard_button2_row {
+  height: 36px;
+  margin-top: 50px;
+  line-height: 36px;
+}
+#bank_pop_btns > div {
+  height: 42px;
+  line-height: 42px;
+}
+
+.mcard_button2_on {
+  background-color: #fcd6d7;
+  color: #534741;
+}dfs
