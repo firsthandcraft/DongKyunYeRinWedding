@@ -337,11 +337,12 @@ border-radius: 30px;
   word-break:  keep-all;
   white-space: nowrap;
 }
+#mask{ display: none;}
 #bank_popup {
   padding: 20px;
   width: 75%;
   background-color: white;
-  /* display: none; */
+ 
   font-size: 16px;
   position: fixed;
   left: 50%;
@@ -376,4 +377,4 @@ border-radius: 30px;
 .mcard_button2_on {
   background-color: #fcd6d7;
   color: #534741;
-}dfs
+}
