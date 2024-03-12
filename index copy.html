@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta property="og:title" content="동균이와예린이결혼합니다."/>
 	<meta property="og:description" content="결혼에 함께해주세요."/>
-	<meta property="og:image" content="https://raw.githubusercontent.com/firsthandcraft/DongKyunYeRinWedding/main/img/mainImg.JPG"/>
+	<meta property="og:image" content="img/thumbnail.png"/>
 	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/media.css">
 	<link rel="stylesheet" href="./css/main.css">
@@ -13,8 +13,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script src="./js/index.js"></script>
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=56609facc2efcd410401f8b26604557c
-	"></script>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=56609facc2efcd410401f8b26604557c"></script>
 
 </head>
 <script>
@@ -40,9 +39,9 @@
 	var map_file_name = '';
 	var map_use_online = '1';
 	var own_hash = '1706432969';
-	
 </script>
-<body>
+<body> 
+	<div id="wrapper">
 	<!-- 메인이미지 -->
 	<div id="scene_wrapper">
 		<div id="scene_slider">
@@ -100,7 +99,7 @@
 	</div>
 	<!-- 날짜 -->
 	<div class="section">
-	<div class="section calendar_section" id="calendar_row" data-section="calendar">
+	<div class=" calendar_section" id="calendar_row" data-section="calendar">
 		<div class="section_header">
 			<div class="section_header_day day_title_wedding_invit"> wedding invitation </div>
 			<div class="section_header_day day_title_date"> date. </div>
@@ -108,14 +107,7 @@
 		</div>
 		<div class="section_body_radius">
 			<div class="calendar_wrapper" >
-				<ul class="calendar_title section_title">
-					<li class="section_title_img">
-						<!--background img 이용 -->
-					</li>        
-					<li>
-					날짜<span class="calendar_title_hide">를 확인하세요</span>
-					</li>
-				</ul>
+				<h2 class="section_title">날짜</h2>
 				<div id="calendar">
 					<div class="calendar_inner">
 						<div class="calendar_ym">2024.06 </div>
@@ -181,19 +173,28 @@
 		</div>
 		<div id="photo_list_wrapper">
 			<div class="photo_wrapper" >
-				<img class="photo_image" src="https://mcard3.bojagicard.com/thm/?w=400&h=400&zc=t&q=90&src=/ecard/photo/j/jgm3353/4f3869f91199599b091a1a8774233d06.jpg" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+				<img class="photo_image" src="img/rec01.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
 			</div>
 			<div class="photo_wrapper" >
-				<img class="photo_image" src="https://mcard3.bojagicard.com/thm/?w=400&h=400&zc=t&q=90&src=/ecard/photo/j/jgm3353/4f3869f91199599b091a1a8774233d06.jpg" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+				<img class="photo_image" src="img/rec02.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
 			</div>
 			<div class="photo_wrapper" >
-				<img class="photo_image" src="https://mcard3.bojagicard.com/thm/?w=400&h=400&zc=t&q=90&src=/ecard/photo/j/jgm3353/4f3869f91199599b091a1a8774233d06.jpg" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+				<img class="photo_image" src="img/rec03.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
 			</div>
 			<div class="photo_wrapper" >
-				<img class="photo_image" src="https://mcard3.bojagicard.com/thm/?w=400&h=400&zc=t&q=90&src=/ecard/photo/j/jgm3353/4f3869f91199599b091a1a8774233d06.jpg" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+				<img class="photo_image" src="img/rec04.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
 			</div>
 			<div class="photo_wrapper" >
-				<img class="photo_image" src="https://mcard3.bojagicard.com/thm/?w=400&h=400&zc=t&q=90&src=/ecard/photo/j/jgm3353/4f3869f91199599b091a1a8774233d06.jpg" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+				<img class="photo_image" src="img/rec05.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec06.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec07.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec08.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
 			</div>
 		</div>
 	</div>
@@ -220,11 +221,12 @@
 </div>
 	<!-- 오시는길 -->
 	<div class="section" id="map_section" data-section="map">
+		<h2 class="section_title">오시는 길</h2>
 			<ul class="map_title section_title">
 				<li class="section_title_img">
 
 				</li>
-				<li>오시는 길
+				<li>
 					<div id="map" style="height:400px;"></div>
 				</li>
 			  </ul>
@@ -234,45 +236,35 @@
 				<div>인천 부평구 부평대로278번길 16</div>
 				<div class="mat_tel_btn">032-524-5000</div>
 				<a href="tel:032-524-5000">
-				  <span class="tel_ask_btn">전화문의 </span>
-				</a>
+					<span class="tel_ask_btn">전화문의 </span>
+				 </a>
 			  </div>
 			  <div id="map_text">
 				<div class="map_text_row">
-					<div style="font-size:15px;"> 지하철</div>
-					<div style="font-size:12px;">7호선 상동역 하차 1번 출구 … 도보 약 8분</div>
+					<div style="font-size:15px;">🚋 지하철</div>
+					<div style="font-size:12px;">1. 1호선(인천방면) 부평역 하차 후 인천지하철로 환승(귤현, 계양방면)</div>
+					<div style="font-size:12px;">2. 인천지하철 갈산역②번 출구로 나오세요.
+					<br/>
+					※인천시외버스터미널에서 인천지하철 이용 (부평, 귤현, 계양방면)
+					</div>
 				</div>
 				<div class="map_text_row">
-					<div style="font-size:15px;"> 자가용</div>
-					<div style="font-size:12px;"> 지하주차장 빠른 연결통로<br /><br />
-						* B1층 - 3&#44;4&#44;5번 기둥<br />
-						* B2층 - 3&#44;4&#44;5&#44;6&#44;17&#44;18번 기둥<br />
-						* B3층 - 3&#44;4&#44;5&#44;6&#44;27번 기둥 
+					<div style="font-size:15px;">🚌버스(대중교통 이용시 대우자동차 정문앞/ 갈산역 하차)</div>
+					<div style="font-size:12px;">일반버스 : 90 간선버스 12, 30, 34, 67-1<br/>
+						지선버스 555, 584-1, 526<br/>
+						시외버스 1400, 3000, 5000, 9500, 3030 = 주차안내<br/>
+						하객주차장 : 부평 우림라이온스밸리 주차장(인천시 부평구 부평대로 283)<br/>
+						갈산역 공영주차장<br/>
+						지하 2층 A구역에서 갈산역 방향으로 이용하여 갈산역 2번 출구로 나오세요.<br/>
+						웨스턴팰리스 웨딩하우스 (구, 부평관광호텔)<br/>
+						(032)524-5000 인천광역시 부평구 부평대로278번길 16<br/>
+						(구 주소: 인천광역시 부평구 갈산동 178-1)
 					</div>
 				</div>
 			  </div>
 
 	</div>
-	<!-- 안내사항 -->
-	<div class="section">
-		<div class="section_header">
-			<h2 class="section_title">안내사항</h2>
-		</div>
-		<div class="section_wrapper"> 
-			<div class="notice_row_wrapper">
-				<div class="notice_row">                
-					<div class="notice_row_no">01</div>
-					<div class="notice_txt_wrapper">
-						<div class="notice_row_txt_title">주의사항</div>
-						<div class="notice_row_txt">
-							자차 이용시 근처 도로가 혼잡할 수 있으니&#44; 이 점 양해 부탁드립니다.                        
-						</div>
-					</div>                
-			  </div>
-			</div>
-		</div>
-	</div>
-	</div>
+
 	<!-- 축하마음전하기 -->
 	<div class="section"> 
 		<div class="section_header">
@@ -287,9 +279,14 @@
             <li class="name_block name_a1">박동균</li>
             <li class="bank_txt_view_btn"
                 data-family_group_type="a"
-                data-bank_name="카카오뱅크"
-                data-bank_num="3333114162673"
+                data-bank_name="신한은행"
+                data-bank_num="110436734334"
             >
+			<p class="box01">
+				<input id="myInput" value="1번 텍스트 복사하기" readonly>
+				<button onclick="copy_to_clipboard()"><img src="https://blog.kakaocdn.net/dn/N1wUc/btqIl7XZtKM/b44qX9Six1vczz2ISWj4LK/img.png" alt="복사하기">
+				</button>
+			</p>
                 <span>계좌</span>
             </li>
         </ul>
@@ -300,18 +297,50 @@
             <li class="bank_txt_view_btn"
                 data-family_group_type="a"
                 data-bank_name="신한은행"
-                data-bank_num="110226697284"
+                data-bank_num="110436734334"
             >
                 <span>계좌</span>
             </li>
         </ul>
     
+<!-- 계좌 팝업 -->
+<div id="bank_popup" class="mask_over">
+
+    <div id="bank_pop_title"></div>
+
+    <div id="bank_pop_notice">
+        복사 버튼 클릭 시, 복사됩니다.
+    </div>
+
+    <div id="bank_pop_txts">
+                
+        <ul class="bank_family_group_block">
+            <li id="bank_pop_txt_unm"></li>
+            <li id="bank_pop_txt_acc"></li>
+        </ul>
+
+    </div>
+
+    <div id="bank_pop_btns" class="mcard_button2_row">
+        <div class="mcard_button2 mcard_button2_on" id="bank_pop_copy_btn">
+            복사
+        </div>
+        <div class="mcard_button2" id="bank_pop_close_btn">
+            닫기
+        </div>
+    </div>
+
+
+</div>        </div>
+
         
        
     
         
 
-</div>
+ </div>
+
+
 	</div>
 </body>
 <script>
@@ -339,5 +368,13 @@ function photo_view(element) {
 	var modalBody = document.querySelector('.modal-body');
 	modalBody.innerHTML = '<img src="' + element.src + '" alt="사진">';
 }
+ //복사
+ function copy_to_clipboard() { 
+     var copyText = document.getElementById('myInput');
+     copyText.select();
+     copyText.setSelectionRange(0, 99999);
+     document.execCommand("Copy");
+     alert('복사되었습니다, 감사합니다.');
+    }
 </script>
 </html>

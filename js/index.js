@@ -20,7 +20,24 @@ $(document).ready(function(){
     // 마커가 지도 위에 표시되도록 설정합니다
     marker.setMap(map);
 
-    var iwContent = '<div style="padding:5px;">웨스턴팰리스웨딩 <br><a href="https://kko.to/rYsDH4ltJP" style="color:blue" target="_blank">인천 부평구 부평대로278번길 16</a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+    var iwContent = 
+    '<div class="wrap">' + 
+            '    <div class="info">' + 
+            '        <div class="title">' + 
+            '            웨스턴팰리스웨딩' + 
+            '            <div class="close" onclick="closeOverlay()" title="닫기"></div>' + 
+            '        </div>' + 
+            '        <div class="body">' + 
+            '            <div class="desc">' + 
+            '                <div class="ellipsis">인천 부평구 부평대로278번길 16</div>' + 
+            '                <div class="jibun ellipsis">(지번) 갈산동 178-1</div>' + 
+            '                <div><a href="https://kko.to/rYsDH4ltJP" target="_blank" class="link">자세히보기</a></div>' + 
+            '            </div>' + 
+            '        </div>' + 
+            '    </div>' +    
+            '</div>';
+    
+    //'<div id="wrap" > <br><a href="" style="color:blue" target="_blank"></a></div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
         iwPosition = new kakao.maps.LatLng(33.450701, 126.570667); //인포윈도우 표시 위치입니다
 
     // 인포윈도우를 생성합니다

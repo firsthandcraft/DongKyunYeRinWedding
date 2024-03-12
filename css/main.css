@@ -96,12 +96,21 @@
   color: #524441;
 }
 .tel_ask_btn {
+  display: block;
+  height: 30px;
+  width: 100px;
+  font-size: 14px;
+    line-height: 31px;
+border-radius: 30px;
+    margin-top: 10px;
+    padding-left: 33px;
   background-color: #dcc5b5;
-  background-image: url(./img/icon_contact_white_tel.png);
+  background-image: url(../img/white_tel.png);
   background-position: 12px center;
   background-repeat: no-repeat;
   background-size: auto 15px;
   color: #ffffff;
+  
 }
 #photo_list_wrapper {
   overflow: hidden;
@@ -258,3 +267,30 @@
   .box01 button img{
   width: 100%;
   }
+/* 가는길 */
+.map_address{  display: flex;flex-direction: column;align-items: center;   }
+.map_address div{ font-family: 'SeoulHangangL'; }
+.wrap {position: absolute;left:119px;bottom:-34px;width:200px;height: 132px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
+.wrap * {padding: 0;margin: 0;}
+.wrap .info {width: 286px;height: 120px;border-radius: 5px;border-bottom: 2px solid #ccc;border-right: 1px solid #ccc;overflow: hidden;background: #fff;}
+.wrap .info:nth-child(1) {width: inherit;border: 0;box-shadow: 0px 1px 2px #fdf8f4;}
+.info .title {text-align: center; padding: 5px 10px;height: 30px;background: #fdf8f4;border-bottom: 1px solid #eae5e2;font-size:16px;font-weight: bold;color:#544741;}
+/* .info .close {position: absolute;top:6px;right: 15px;color: #888;width:18px;height:18px;background: url('../img/close.png');} */
+.info .close:hover {cursor: pointer;}
+.info .body {position: relative;overflow: hidden;}
+.info .desc {position: relative;margin:20px;height: 75px;}
+.desc .ellipsis {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.desc .jibun {font-size: 11px;color: #888;margin-top: -2px;}
+.info .img {position: absolute;top: 6px;left: 5px;width: 73px;height: 71px;border: 1px solid #ddd;color: #888;overflow: hidden;}
+.info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+.info .link {color: #5085BB;}
+#map_text {
+  font-size: 14px;
+  line-height: 24px;
+  margin-top: 20px;
+  text-align: center;
+}
+#map_text div{font-family: 'SeoulHangangL';}
+.map_text_row{margin-bottom:20px;}
+.map_text_row div{margin:6px 0;}
+.map_text_row span{display:block;font-size: 11px;}
