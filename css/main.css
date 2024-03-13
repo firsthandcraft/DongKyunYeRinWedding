@@ -97,12 +97,20 @@
   color: #524441;
 }
 .tel_ask_btn {
+  display: inline-block;
   background-color: #dcc5b5;
-  background-image: url(./img/icon_contact_white_tel.png);
+  background-image: url('../img/white_tel.png');
   background-position: 12px center;
   background-repeat: no-repeat;
   background-size: auto 15px;
   color: #ffffff;
+  font-size: 14px;
+  line-height: 31px;
+  margin: 0;
+  margin-top: 2px;
+  padding: 6px 24px;
+  padding-left: 32px;
+  border-radius: 20px;
 }
 #photo_list_wrapper {
   overflow: hidden;
