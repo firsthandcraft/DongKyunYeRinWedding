@@ -331,14 +331,14 @@
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   border-color: #a7adbb;
-    font-family: 'SeoulHangangJungL';
+    font-family: 'SeoulHangangL';
 }
 .bank_family_group_block .family_member_a:last-of-type, .bank_family_group_block .family_member_b:last-of-type {
   border-width: 1px 1px 1px 1px;
   border-top: none;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  font-family: 'SeoulHangangJungL';
+  font-family: 'SeoulHangangL';
   border-color: #a7adbb;
 }
 .bank_family_group_block > li {
@@ -347,7 +347,7 @@
   letter-spacing: 1px;
   line-height: 43px;
   padding-left: 15px;
-  font-family: 'SeoulHangangJungL';
+  font-family: 'SeoulHangangL';
 }
 .bank_family_group_block > li:first-child {  border-bottom: 1px solid #a7adbb;}
 .family_members {
@@ -369,7 +369,7 @@
   padding-right: 8px;
 }
 /* 계좌 */
-#bank_pop_title,#bank_pop_notice,#bank_family_group_block li,#bank_family_group_block li span{ font-family:'SeoulHangangL' ;}
+#bank_pop_title,#bank_pop_notice,.name_block,.bank_txt_view_btn span{ font-family:'SeoulHangangL' ;}
 #bank_pop_txt_acc {
   word-break:  keep-all;
   white-space: nowrap;
