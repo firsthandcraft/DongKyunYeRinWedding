@@ -108,7 +108,7 @@
   line-height: 31px;
   margin: 0;
   margin-top: 2px;
-  padding: 6px 24px;
+  padding: 6px 20px;
   padding-left: 32px;
   border-radius: 20px;
 }
@@ -358,7 +358,6 @@
   justify-content: space-between;
   line-height: 42px;
   padding-left: 12px;
-  font-family: 'SeoulHangangJungL';
 }
 
 .bank_txt_view_btn {
@@ -370,6 +369,7 @@
   padding-right: 8px;
 }
 /* 계좌 */
+#bank_pop_title,#bank_pop_notice,#bank_family_group_block li,#bank_family_group_block li span{ font-family:'SeoulHangangL' ;}
 #bank_pop_txt_acc {
   word-break:  keep-all;
   white-space: nowrap;
@@ -391,6 +391,7 @@
 #bank_pop_title {
   font-size: 18px;
   text-align: center;
+
 }
 #bank_pop_notice {
   margin-top: 20px;
