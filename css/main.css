@@ -327,9 +327,11 @@
 }
 .bank_family_group_block .family_member_a:last-of-type, .bank_family_group_block .family_member_b:last-of-type {
   border-width: 1px 1px 1px 1px;
+  border-top: none;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   font-family: 'SeoulHangangJungL';
+  border-color: #a7adbb;
 }
 .bank_family_group_block > li {
   height: 43px;
@@ -353,9 +355,9 @@
 
 .bank_txt_view_btn {
   border-left: 1px solid #a7adbb;
+ 
   cursor: pointer;
   font-size: 15px;
-  border-left: 1px solid #a7adbb;
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -363,6 +365,8 @@
 #bank_pop_txt_acc {
   word-break:  keep-all;
   white-space: nowrap;
+}
+.bank_txt_view_btn {
 }
 /* #mask{ display: none;} */
 #bank_popup {
