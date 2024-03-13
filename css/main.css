@@ -19,7 +19,7 @@
   #scene_slider {
     position: absolute;
     width: 100%;
-    height: 552px;
+    height: 552px !important;
     z-index: -1;
     /* top: 244px; */
   }
