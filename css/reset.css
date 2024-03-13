@@ -41,6 +41,9 @@ table {
     border-color: gray;
 }
 div{display: block;}
+[class$=button] {
+    cursor: pointer;
+}
 /*  */
 .section {
     padding-bottom: 64px;

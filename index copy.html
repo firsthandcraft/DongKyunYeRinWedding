@@ -1,3 +1,4 @@
+56609facc2efcd410401f8b26604557c
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -13,7 +14,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script src="./js/index.js"></script>
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=56609facc2efcd410401f8b26604557c"></script>
+	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d0e29c54960b51a37a1ccaf01acc124d"></script>
 
 </head>
 <script>
@@ -60,8 +61,8 @@
 		</div>
 		<article>
 			<p class="insa_text">
-				싱그러운 여름 향기 가득한 날, 소중한 분들을 모시고 사랑의 약속을 하려고 합니다. <br>
-				햇살이 뜨거울 땐 가려주고, 비가오면 우산이 되어주는 부부가 되겠습니다. <br>
+				싱그러운 여름 향기 가득한 날, 소중한 분들을 모시고<br> 사랑의 약속을 하려고 합니다. <br>
+				햇살이 뜨거울 땐 가려주고, 비가오면<br> 우산이 되어주는 부부가 되겠습니다. <br>
 				기쁜날 함께 하시어 저희의 앞날을 축복해 주세요.
 			</p>
 		</article>
@@ -218,7 +219,7 @@
             </div>
         </div>
     </div>
-</div>
+	</div>
 	<!-- 오시는길 -->
 	<div class="section" id="map_section" data-section="map">
 		<h2 class="section_title">오시는 길</h2>
@@ -229,119 +230,123 @@
 				<li>
 					<div id="map" style="height:400px;"></div>
 				</li>
-			  </ul>
-		
+			</ul>
+			<div class="map_navi_icon">
+				<div class="map_navi_button">
+					<a target="_blank"
+							onclick='$(".insbox").show();$(".inss").hide();$("#ins_tmap").show();'
+							href="https://apis.openapi.sk.com/tmap/app/routes?appKey=l7xx20401a447f994002b83f0e74e5482a2d&name=%EC%86%8C%ED%92%8D%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9&lon=126.75669879243438&lat=37.50360463664355">
+							<img class="map_navi_button_img" src="/img/map_navi_button-tmap.png" />
+							<br />티맵
+					</a>
+					
+				</div>
+				<div class="map_navi_button">
+						<a target="_blank" onclick="return not_for_pc()" href="http://m.atlan.co.kr/searchPlus/linkAtlan.do?shareType=kakao&coordX=126.75669879243438&coordY=37.50360463664355&title=%EC%86%8C%ED%92%8D%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9&AuthKey=2b1ffc4c97acca5a359282739535a280576c02aa0cc4c89b86afca8e20bdc7e8">
+							<img class="map_navi_button_img" src="/img/map_navi_button-atlan.png" />
+							<br />아틀란
+						</a>
+				</div>
+				<div class="map_navi_button">
+						<a href="javascript://" onclick="windowcopen('//map.naver.com/?menu=location&pinType=place&lat=37.50360463664355&lng=126.75669879243438&title=%EC%86%8C%ED%92%8D%EC%BB%A8%EB%B2%A4%EC%85%98%EC%9B%A8%EB%94%A9','','width=1156,height=720')">
+								<img src="/img/map_navi_button-naver.png" />      
+								<br /> 네이버  
+						</a>
+				</div>
+				<div class="map_navi_button">
+						<a onclick="kakao_navi();$('.insbox').hide();"><img src="/img/map_navi_button-kakao.png" /><br/>카카오</a>
+				</div>
+			</div>	
 			  <div class="map_address">
 				<div>웨스턴펠리스</div>
 				<div>인천 부평구 부평대로278번길 16</div>
 				<div class="mat_tel_btn">032-524-5000</div>
 				<a href="tel:032-524-5000">
-					<span class="tel_ask_btn">전화문의 </span>
-				 </a>
+				  <span class="tel_ask_btn">전화문의 </span>
+				</a>
 			  </div>
 			  <div id="map_text">
 				<div class="map_text_row">
 					<div style="font-size:15px;">🚋 지하철</div>
-					<div style="font-size:12px;">1. 1호선(인천방면) 부평역 하차 후 인천지하철로 환승(귤현, 계양방면)</div>
+					<div style="font-size:12px;">1. 1호선(인천방면) 부평역 하차 후 인천지하철로 환승<span>(귤현, 계양방면)</span></div>
 					<div style="font-size:12px;">2. 인천지하철 갈산역②번 출구로 나오세요.
-					<br/>
-					※인천시외버스터미널에서 인천지하철 이용 (부평, 귤현, 계양방면)
+					<span>※인천시외버스터미널에서 인천지하철 이용 (부평, 귤현, 계양방면)</span>
 					</div>
 				</div>
 				<div class="map_text_row">
-					<div style="font-size:15px;">🚌버스(대중교통 이용시 대우자동차 정문앞/ 갈산역 하차)</div>
-					<div style="font-size:12px;">일반버스 : 90 간선버스 12, 30, 34, 67-1<br/>
-						지선버스 555, 584-1, 526<br/>
-						시외버스 1400, 3000, 5000, 9500, 3030 = 주차안내<br/>
-						하객주차장 : 부평 우림라이온스밸리 주차장(인천시 부평구 부평대로 283)<br/>
-						갈산역 공영주차장<br/>
-						지하 2층 A구역에서 갈산역 방향으로 이용하여 갈산역 2번 출구로 나오세요.<br/>
-						웨스턴팰리스 웨딩하우스 (구, 부평관광호텔)<br/>
-						(032)524-5000 인천광역시 부평구 부평대로278번길 16<br/>
-						(구 주소: 인천광역시 부평구 갈산동 178-1)
+					<div style="font-size:15px;">🚌 버스</div>
+					<div style="font-size:12px;">
+						(대중교통 이용시 대우자동차 정문앞/ 갈산역 하차)<br/>
+						일반버스 : 90 간선버스 12, 30, 34, 67-1<br/>
+						지선버스 : 555, 584-1, 526<br/>
+						시외버스 : 1400, 3000, 5000, 9500, 3030 <br/>
 					</div>
 				</div>
-			  </div>
-
+				<div class="map_text_row">
+						<div style="font-size:15px;">주차안내</div>
+						<div style="font-size:12px;">
+						하객주차장(부평 우림라이온스밸리 주차장)<br/>
+						<span>(인천시 부평구 부평대로 283)</span>
+						</div>
+						<div style="font-size:12px;">갈산역 공영주차장
+							<span>지하 2층 A구역에서 갈산역 방향으로 이용하여 갈산역 2번 출구로 나오세요.<br>
+							웨스턴팰리스 웨딩하우스 (구, 부평관광호텔)<br>
+							(032)524-5000 인천광역시 부평구 부평대로278번길 16<br>
+							(구 주소: 인천광역시 부평구 갈산동 178-1)</span>
+						</div>
+						
+					</div>
+				</div>
 	</div>
+
 
 	<!-- 축하마음전하기 -->
 	<div class="section"> 
 		<div class="section_header">
 			<h2 class="section_title">축하의 마음 전하기</h2>
 		</div>
-		<div class="bank_family_group_block bank_family_group_block_a family_group_tbl"
-    data-type="a" data-side="a"
->
-   
-        
-        <ul class="family_members family_member_a family_member_a1" data-side="a">
-            <li class="name_block name_a1">박동균</li>
-            <li class="bank_txt_view_btn"
-                data-family_group_type="a"
-                data-bank_name="신한은행"
-                data-bank_num="110436734334"
-            >
-			<p class="box01">
-				<input id="myInput" value="1번 텍스트 복사하기" readonly>
-				<button onclick="copy_to_clipboard()"><img src="https://blog.kakaocdn.net/dn/N1wUc/btqIl7XZtKM/b44qX9Six1vczz2ISWj4LK/img.png" alt="복사하기">
-				</button>
-			</p>
-                <span>계좌</span>
-            </li>
-        </ul>
-    
-        
-        <ul class="family_members family_member_a family_member_a2" data-side="a">
-            <li class="name_block name_a2">남예린</li>
-            <li class="bank_txt_view_btn"
-                data-family_group_type="a"
-                data-bank_name="신한은행"
-                data-bank_num="110436734334"
-            >
-                <span>계좌</span>
-            </li>
-        </ul>
-    
-<!-- 계좌 팝업 -->
-<div id="bank_popup" class="mask_over">
-
-    <div id="bank_pop_title"></div>
-
-    <div id="bank_pop_notice">
-        복사 버튼 클릭 시, 복사됩니다.
+		<div class="bank_family_group_block bank_family_group_block_a family_group_tbl"data-type="a" data-side="a">
+			<ul class="family_members family_member_a family_member_a1" data-side="a" onclick="bank_view('groom')">
+				<li class="name_block name_a1">박동균</li>
+				<li class="bank_txt_view_btn"
+					data-family_group_type="a"
+					data-name="박동균"
+					data-bank_name="신한은행"
+					data-bank_num="110-359-913109">
+					<span>계좌</span>
+				</li>
+			</ul>
+			<ul class="family_members family_member_a family_member_a2" data-side="a" onclick="bank_view('bride')">
+				<li class="name_block name_a2">남예린</li>
+				<li class="bank_txt_view_btn"
+					data-family_group_type="a"
+					data-name="남예린"
+					data-bank_name="신한은행"
+					data-bank_num="110-522-193955">
+					<span>계좌</span>
+				</li>
+			</ul>
+		</div>
     </div>
-
-    <div id="bank_pop_txts">
-                
-        <ul class="bank_family_group_block">
-            <li id="bank_pop_txt_unm"></li>
-            <li id="bank_pop_txt_acc"></li>
-        </ul>
-
-    </div>
-
-    <div id="bank_pop_btns" class="mcard_button2_row">
-        <div class="mcard_button2 mcard_button2_on" id="bank_pop_copy_btn">
-            복사
-        </div>
-        <div class="mcard_button2" id="bank_pop_close_btn">
-            닫기
-        </div>
-    </div>
-
-
-</div>        </div>
-
-        
-       
-    
-        
-
- </div>
-
-
+	<!-- 계좌 팝업 -->
+	<div id="mask" class="hidden" style="position: fixed; z-index: 10; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0.4); cursor: pointer; width: 100%; height: 100%;">
+		<div id="bank_popup" class="mask_over">
+			<div class="bank_content">
+			</div>
+			<div id="bank_pop_btns" class="mcard_button2_row">
+				<div class="mcard_button2 mcard_button2_on" id="bank_pop_copy_btn" onclick="copy_to_clipboard()">
+					복사
+				</div>
+				<div class="mcard_button2" id="bank_pop_close_btn">
+					닫기
+				</div>
+			</div>
+		</div>   
 	</div>
+	 </div>
+
+
+
 </body>
 <script>
 	
@@ -351,15 +356,24 @@ function openModal() {
 	document.getElementById('modal').classList.remove('hidden');
 	document.body.classList.add('overflow-hidden');
 }
+function openBank() {
+	document.getElementById('mask').classList.remove('hidden');
+	document.body.classList.add('overflow-hidden');
+}
 
 // 모달 닫기 함수
 function closeModal() {
 	document.getElementById('modal').classList.add('hidden');
 	document.body.classList.remove('overflow-hidden');
 }
+function closeBank() {
+	document.getElementById('mask').classList.add('hidden');
+	document.body.classList.remove('overflow-hidden');
+}
 
 // 모달 닫기 버튼에 이벤트 리스너 추가
 document.getElementById('modal-close').addEventListener('click', closeModal);
+document.getElementById('bank_pop_close_btn').addEventListener('click', closeBank);
 
 // 이미지를 클릭했을 때 모달 열기
 function photo_view(element) {
@@ -368,13 +382,49 @@ function photo_view(element) {
 	var modalBody = document.querySelector('.modal-body');
 	modalBody.innerHTML = '<img src="' + element.src + '" alt="사진">';
 }
+function bank_view(element) {
+	openBank();
+	// 모달 내용 설정 예시: 이미지
+	let roll;
+	let modalBody	 = document.querySelector('.bank_content');
+	let bankName;
+	let bankNum;
+	let personName;
+	if(element == "groom"){ 
+		roll = '신랑';
+		bankName= document.querySelector('.family_member_a1 .bank_txt_view_btn').dataset.bank_name;
+		bankNum = document.querySelector('.family_member_a1 .bank_txt_view_btn').dataset.bank_num;
+	  personName = document.querySelector('.family_member_a1 .bank_txt_view_btn').dataset.name;
+	} else{
+		roll = '신부';
+		bankName= document.querySelector('.family_member_a2 .bank_txt_view_btn').dataset.bank_name;
+		bankNum = document.querySelector('.family_member_a2 .bank_txt_view_btn').dataset.bank_num;
+	  personName = document.querySelector('.family_member_a2 .bank_txt_view_btn').dataset.name;
+  }
+
+	modalBody.innerHTML = 	`<div id="bank_pop_title">${roll}측 계좌번호</div>
+		<div id="bank_pop_notice">
+			복사 버튼 클릭 시, 복사됩니다.
+		</div>
+		<div id="bank_pop_txts">
+			<ul class="bank_family_group_block" >
+				<li id="bank_pop_txt_unm">${personName}</li>
+				<li>${bankName}<span id="bank_pop_txt_acc">${bankNum}</span></li>
+			</ul>
+		</div>`;
+	
+}
  //복사
  function copy_to_clipboard() { 
-     var copyText = document.getElementById('myInput');
-     copyText.select();
-     copyText.setSelectionRange(0, 99999);
-     document.execCommand("Copy");
-     alert('복사되었습니다, 감사합니다.');
+		var copyText = document.getElementById('bank_pop_txt_acc').innerText;
+		var tempInput = document.createElement("input");
+		document.body.appendChild(tempInput);
+		tempInput.setAttribute("value", copyText);
+		tempInput.select();
+		document.execCommand("copy");
+		document.body.removeChild(tempInput);
+		alert('복사되었습니다, 감사합니다.');
+		closeBank();
     }
 </script>
 </html>
