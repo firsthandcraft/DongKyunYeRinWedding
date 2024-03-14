@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -200,24 +201,35 @@
 	</div>
 	<!-- 모달 -->
 	<div id="modal" class="hidden fixed z-10 inset-0 overflow-y-auto">
-    <div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-        <div class="fixed inset-0 transition-opacity" aria-hidden="true">
-            <div class="absolute inset-0 bg-gray-500 opacity-75"></div>
-        </div>
-        <!-- 모달 콘텐츠 -->
-        <div class="modal-content inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
-            <!-- 모달 내용 -->
-            <div class="modal-body">
-                <!-- 여기에 모달 내용을 넣습니다. -->
-            </div>
-            <!-- 모달 하단 -->
-            <div class="modal-footer bg-gray-100 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                <button id="modal-close" type="button" class="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-green-600 text-base font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm">
-                    닫기
-                </button>
-            </div>
-        </div>
-    </div>
+		<div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0 ">
+			<div class="fixed inset-0 transition-opacity" aria-hidden="true">
+				<div class="absolute inset-0 bg-black opacity-65"></div>
+			</div>
+			<!-- 모달 콘텐츠 -->
+			<div class="modal-content inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full relative">
+				<button id="modal-close" type="button" class="absolute inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-gray-300 text-base font-medium text-black hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm">
+					 <span class="hidden sm:inline">&times;</span>
+				</button>
+				<button type="button" onclick="pre_view()" class="absolute top-1/2 left-4 transform -translate-y-1/2 inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-gray-300 text-base font-medium text-gray-700 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:w-auto sm:text-sm">
+					<!-- 왼쪽 화살표 아이콘 -->
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+					</svg>
+				</button>
+				<button type="button" onclick="next_view()" class="absolute top-1/2 right-4 transform -translate-y-1/2 inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-gray-300 text-base font-medium text-gray-700 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:w-auto sm:text-sm">
+					<!-- 오른쪽 화살표 아이콘 -->
+					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+					</svg>
+				</button>
+				<!-- 모달 내용 -->
+				<div class="modal-body">
+					<!-- 여기에 모달 내용을 넣습니다. -->
+					
+				</div>
+				
+			</div>
+		</div>
 	</div>
 	<!-- 오시는길 -->
 	<div class="section" id="map_section" data-section="map">
@@ -410,9 +422,59 @@ function bank_view(element) {
 				<li id="bank_pop_txt_unm">${personName}</li>
 				<li>${bankName}<span id="bank_pop_txt_acc">${bankNum}</span></li>
 			</ul>
-		</div>`;
-	
+		</div>`;	
 }
+//이미지슬라이드 화살표
+
+const totalImages = 8; // 총 이미지 수
+
+// 이전 이미지 버튼 클릭 시
+function pre_view() {
+    let modalBody = document.querySelector('.modal-body img');
+    let currentImageSrc = modalBody.getAttribute('src');
+    console.log(modalBody);
+    console.log(currentImageSrc);
+    // 이미지 파일명에서 인덱스 추출
+    let index = currentImageSrc.match(/rec(\d+)\.png/)[1];
+    currentImageIndex = parseInt(index);
+    currentImageIndex = (currentImageIndex === 1) ? totalImages : currentImageIndex - 1;
+    // 두 자리 숫자로 포맷팅
+    let formattedIndex = currentImageIndex.toString().padStart(2, '0');
+    console.log(formattedIndex);
+    updateImage(formattedIndex);
+}
+// 다음 이미지 버튼 클릭 시
+function next_view() {
+    let modalBody = document.querySelector('.modal-body img');
+    let currentImageSrc = modalBody.getAttribute('src');
+    console.log(modalBody);
+    console.log(currentImageSrc);
+    // 이미지 파일명에서 인덱스 추출
+	let index = currentImageSrc.match(/rec(\d+)\.png/)[1];
+	currentImageIndex = parseInt(index);
+    currentImageIndex = (currentImageIndex === totalImages) ? 1 : currentImageIndex + 1;
+    // 두 자리 숫자로 포맷팅
+    let formattedIndex = currentImageIndex.toString().padStart(2, '0');
+    console.log(formattedIndex);
+    updateImage(formattedIndex);
+};
+
+// 이미지 업데이트 함수
+function updateImage(e) {
+	let modalBody = document.querySelector('.modal-body');
+	let img = modalBody.querySelector('img'); // 이미지 요소 찾기
+	if (img) {
+        img.src = 'img/rec' + e + '.png'; // 이미지의 src 속성 변경
+        img.alt = '사진'; // alt 속성 설정
+    } else {
+        // 이미지 요소가 없는 경우 새로 생성하여 추가
+        img = document.createElement('img');
+        img.src = 'img/rec' + e + '.png';
+        img.alt = '사진';
+        modalBody.appendChild(img);
+    }
+}
+
  //복사
  function copy_to_clipboard() { 
 		var copyText = document.getElementById('bank_pop_txt_acc').innerText;
