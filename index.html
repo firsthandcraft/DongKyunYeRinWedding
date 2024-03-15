@@ -206,22 +206,21 @@
 				<div class="absolute inset-0 bg-black opacity-65"></div>
 			</div>
 			<!-- 모달 콘텐츠 -->
-			<div class="modal-content inline-block align-bottom bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full relative">
-				<button id="modal-close" type="button" class="absolute inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-gray-300 text-base font-medium text-black hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:ml-3 sm:w-auto sm:text-sm">
-					 <span class="hidden sm:inline">&times;</span>
-				</button>
-				<button type="button" onclick="pre_view()" class="absolute top-1/2 left-4 transform -translate-y-1/2 inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-gray-300 text-base font-medium text-gray-700 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:w-auto sm:text-sm">
-					<!-- 왼쪽 화살표 아이콘 -->
-					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-					</svg>
-				</button>
-				<button type="button" onclick="next_view()" class="absolute top-1/2 right-4 transform -translate-y-1/2 inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-gray-300 text-base font-medium text-gray-700 hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:mt-0 sm:w-auto sm:text-sm">
-					<!-- 오른쪽 화살표 아이콘 -->
-					<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-					</svg>
-				</button>
+			<div class=" modal-content inline-block align-bottom bg-white rounded-lg text-left shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full relative">
+				<p class="pop_btn pop_close_btn ">
+					<button id="modal-close" type=" button" >
+						<!-- <span class="hidden sm:inline">&times;</span> -->
+				 </button>
+				</p>
+				<p class="pop_btn pop_left_btn arrow_btn">
+					<button type="button" onclick="pre_view()" ></button>
+				</p>
+				<p class="pop_btn pop_right_btn arrow_btn">
+					<button type="button" onclick="next_view()" >
+					</button>
+				</p>
+				
+				
 				<!-- 모달 내용 -->
 				<div class="modal-body">
 					<!-- 여기에 모달 내용을 넣습니다. -->
