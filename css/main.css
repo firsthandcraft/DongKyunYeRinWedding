@@ -223,7 +223,7 @@
 }
 .pop_close_btn{
   background:#ffffffd6;
-  right: 10px;
+  right: 34px;
   top: 10px;
 }
 .pop_close_btn button{
@@ -261,12 +261,12 @@
   height: 100%;
 }
 .pop_left_btn{
-  left: -36px;
+  left: -10px;
   top:calc(50% - 20px);
 }
 .pop_right_btn{
   top:calc(50% - 20px);
-  right: -36px;
+  right: -10px;
 }
 .arrow_btn button:before{
   height:24px;
