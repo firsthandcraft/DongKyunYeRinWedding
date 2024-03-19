@@ -15,7 +15,9 @@
 	<script src="https://cdn.tailwindcss.com"></script>
 	<script src="./js/index.js"></script>
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d0e29c54960b51a37a1ccaf01acc124d"></script>
-
+<style>
+	
+</style>
 </head>
 <script>
 	var page_name = 'home'
@@ -215,35 +217,31 @@
 		</div>
 	</div>
 	<!-- 모달 -->
-	<div id="modal" class="hidden fixed z-10 inset-0 overflow-y-auto">
-		<div class="flex items-center justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-			<div class="fixed inset-0 transition-opacity" aria-hidden="true">
-				<div class="absolute inset-0 bg-black opacity-65"></div>
-			</div>
-			<!-- 모달 콘텐츠 -->
-			<div class="modal-content inline-block align-bottom bg-white rounded-lg text-left shadow-xl transform transition-all relative" style="background: #fff0; display: flex; justify-content: center;padding-left: 24px; padding-right: 24px;">
-				<p class="pop_btn pop_close_btn ">
-					<button id="modal-close" type=" button" >
-						<!-- <span class="hidden sm:inline">&times;</span> -->
-				 </button>
-				</p>
-				<p class="pop_btn pop_left_btn arrow_btn">
-					<button type="button" onclick="pre_view()" ></button>
-				</p>
-				<p class="pop_btn pop_right_btn arrow_btn">
-					<button type="button" onclick="next_view()" >
-					</button>
-				</p>
+	<div id="modal" class="hidden"><!--hidden fixed z-10 inset-0 overflow-y-auto-->
+
 				
-				
-				<!-- 모달 내용 -->
+		
 				<div class="modal-body">
-					<!-- 여기에 모달 내용을 넣습니다. -->
 					
+					<div class="swiper mySwiper">
+						<p class="pop_btn pop_close_btn ">
+							<button id="modal-close" type=" button" >
+						 </button>
+						</p>
+						<!-- <p class="pop_btn pop_left_btn arrow_btn">
+							<button type="button" onclick="pre_view()" ></button>
+						</p>
+						<p class="pop_btn pop_right_btn arrow_btn">
+							<button type="button" onclick="next_view()" >
+							</button>
+						</p> -->
+						<div class="swiper-wrapper"></div>
+						<div class="pop_btn swiper-button-next arrow_btn"><span></span></div>
+							<div class="pop_btn swiper-button-prev  arrow_btn"><span></span></div>
+					</div>
 				</div>
 				
-			</div>
-		</div>
+
 	</div>
 	<!-- 오시는길 -->
 	<div class="section" id="map_section" data-section="map">
@@ -378,10 +376,12 @@
 
 
 </body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 <script>
-	
-	  // 모달
-    // 모달 열기 함수
+
+// 모달
+// 모달 열기 함수
 function openModal() {
 	document.getElementById('modal').classList.remove('hidden');
 	document.body.classList.add('overflow-hidden');
@@ -407,13 +407,24 @@ document.getElementById('bank_pop_close_btn').addEventListener('click', closeBan
 
 // 이미지를 클릭했을 때 모달 열기
 function photo_view(element) {
-	openModal();
+	
 	// 모달 내용 설정 예시: 이미지
-	var modalBody = document.querySelector('.modal-body');
+	var modalBody = document.querySelector('.modal-body .swiper-wrapper');
 	let imagePath=element.src;
 	let indexMatch = imagePath.match(/rec(\d+)\.png/)[1];
-	
-	modalBody.innerHTML = '<img src="img/yrec' + indexMatch + '.png" alt="사진">';
+	modalBody.innerHTML = '';
+	for (let i = 1; i <= 13; i++) {
+    let paddedIndex = i.toString().padStart(2, '0'); // 숫자를 2자리로 패딩하여 문자열로 변환
+    modalBody.innerHTML += `<div class="swiper-slide"><img src="img/yrec${paddedIndex}.png" alt="사진"></div>`;
+}
+	var swiper = new Swiper(".mySwiper", {
+		initialSlide: indexMatch - 1, // indexMatch에 해당하는 슬라이드를 초기 슬라이드로 설정
+		navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+	});
+	openModal();
 }
 function bank_view(element) {
 	openBank();
