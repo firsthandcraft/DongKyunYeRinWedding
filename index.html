@@ -253,13 +253,8 @@
 			<div class="photo_wrapper" >
 				<img class="photo_image" src="img/rec27.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
 			</div>
-			<div class="photo_wrapper" >
-				<img class="photo_image" src="img/rec28.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
-			</div>
-			<div class="photo_wrapper" >
-				<img class="photo_image" src="img/rec29.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
-			</div>
-			
+		
+	
 		</div>
 		<div id="moreBtn"onclick="moreView()">더보기</div>
 	</div>
@@ -461,7 +456,7 @@ function photo_view(element) {
 	let imagePath=element.src;
 	let indexMatch = imagePath.match(/rec(\d+)\.png/)[1];
 	modalBody.innerHTML = '';
-	for (let i = 1; i <= 29; i++) {
+	for (let i = 1; i <= 27; i++) {
     let paddedIndex = i.toString().padStart(2, '0'); // 숫자를 2자리로 패딩하여 문자열로 변환
     modalBody.innerHTML += `<div class="swiper-slide"><img src="img/yrec${paddedIndex}.png" alt="사진"></div>`;
 }
@@ -507,7 +502,7 @@ function bank_view(element) {
 }
 //이미지슬라이드 화살표
 
-const totalImages = 29; // 총 이미지 수
+const totalImages = 27; // 총 이미지 수
 
 // 이전 이미지 버튼 클릭 시
 function pre_view() {
