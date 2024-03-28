@@ -214,7 +214,57 @@
 			<div class="photo_wrapper" >
 				<img class="photo_image" src="img/rec13.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
 			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec14.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec15.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec16.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec17.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec18.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec19.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec20.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec21.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec22.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec23.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec24.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec25.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec26.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec27.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec28.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			<div class="photo_wrapper" >
+				<img class="photo_image" src="img/rec29.png" data-photo_no="1" data-photo_idx="3960470" data-fnm="4f3869f91199599b091a1a8774233d06.jpg" onclick="photo_view(this)" />
+			</div>
+			
 		</div>
+		<div class="moreBtn"onclick="moreView()">더보기</div>
 	</div>
 	<!-- 모달 -->
 	<div id="modal" class="hidden"><!--hidden fixed z-10 inset-0 overflow-y-auto-->
@@ -379,6 +429,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 <script>
+var isOpen = false;
 
 // 모달
 // 모달 열기 함수
@@ -413,7 +464,7 @@ function photo_view(element) {
 	let imagePath=element.src;
 	let indexMatch = imagePath.match(/rec(\d+)\.png/)[1];
 	modalBody.innerHTML = '';
-	for (let i = 1; i <= 13; i++) {
+	for (let i = 1; i <= 29; i++) {
     let paddedIndex = i.toString().padStart(2, '0'); // 숫자를 2자리로 패딩하여 문자열로 변환
     modalBody.innerHTML += `<div class="swiper-slide"><img src="img/yrec${paddedIndex}.png" alt="사진"></div>`;
 }
@@ -459,7 +510,7 @@ function bank_view(element) {
 }
 //이미지슬라이드 화살표
 
-const totalImages = 13; // 총 이미지 수
+const totalImages = 29; // 총 이미지 수
 
 // 이전 이미지 버튼 클릭 시
 function pre_view() {
@@ -520,5 +571,20 @@ function updateImage(e) {
 		alert('복사되었습니다, 감사합니다.');
 		closeBank();
     }
+//더보기
+function moreView(){
+    var photoHeight = document.getElementById('photo_list_wrapper');
+    var btn = document.querySelector('.moreBtn');
+    isOpen = !isOpen; // 토글 상태 변경
+
+    if (isOpen) {
+        photoHeight.style.height = 'unset';
+        btn.textContent = '접기';
+    } else {
+        photoHeight.style.height = '540px';
+        btn.textContent = '더보기';
+    }
+}
+
 </script>
 </html>

@@ -117,6 +117,16 @@
   display: inline-block;
   margin: auto;
   padding-left: 2px;
+  height:540px;
+}
+.moreBtn{
+  width:100%;
+  padding:10px;
+  font-family: 'SeoulHangangL';
+  font-size:13px;
+  border:1px solid #ded0c5;
+  text-align:center;
+  cursor:pointer;
 }
 .photo_wrapper {
   width: 33.33%;
