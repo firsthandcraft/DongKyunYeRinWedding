@@ -264,7 +264,7 @@
 			</div>
 			
 		</div>
-		<div class="moreBtn"onclick="moreView()">더보기</div>
+		<div id="moreBtn"onclick="moreView()">더보기</div>
 	</div>
 	<!-- 모달 -->
 	<div id="modal" class="hidden"><!--hidden fixed z-10 inset-0 overflow-y-auto-->
@@ -574,7 +574,7 @@ function updateImage(e) {
 //더보기
 function moreView(){
     var photoHeight = document.getElementById('photo_list_wrapper');
-    var btn = document.querySelector('.moreBtn');
+    var btn = document.querySelector('#moreBtn');
     isOpen = !isOpen; // 토글 상태 변경
 
     if (isOpen) {
