@@ -3,14 +3,14 @@ $(document).ready(function(){
     
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
     mapOption = { 
-        center: new kakao.maps.LatLng(37.51684746591705, 126.72214167109121), // 지도의 중심좌표
+        center: new kakao.maps.LatLng(37.51587745702085, 126.72249026291496 ), // 지도의 중심좌표
         level: 3 // 지도의 확대 레벨
     };
 
     var map = new kakao.maps.Map(mapContainer, mapOption);
 
     // 마커가 표시될 위치입니다 
-    var markerPosition  = new kakao.maps.LatLng(37.51684746591705, 126.72214167109121); 
+    var markerPosition  = new kakao.maps.LatLng(37.51587745702085, 126.72249026291496 ); 
 
     // 마커를 생성합니다
     var marker = new kakao.maps.Marker({
