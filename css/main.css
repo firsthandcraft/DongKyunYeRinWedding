@@ -490,7 +490,13 @@
   line-height: 42px;
   padding-left: 12px;
 }
-
+.bank_family_group_block > li:first-child {  border-bottom: 1px solid #a7adbb;}
+.family_members>li:first-child {
+  width: 82%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
 .bank_txt_view_btn {
   border-left: 1px solid #a7adbb;
  
