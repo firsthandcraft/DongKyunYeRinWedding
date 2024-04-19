@@ -386,13 +386,23 @@
 					<span>복사</span>
 				</li>
 			</ul>
-			<ul class="family_members family_member_a family_member_a2" data-side="a" onclick="bank_view('bride')">
+			<ul class="family_members family_member_a family_member_a2" data-side="a" onclick="bank_view('bride')"style="border-left: 1px solid #a7adbb;border-right: 1px solid #a7adbb;">
 				<li class="name_block name_a2">남예린<span style="margin-left: 10px;">신한 110-522-193955</span></li>
 				<li class="bank_txt_view_btn"
 					data-family_group_type="a"
 					data-name="남예린"
 					data-bank_name="신한은행"
 					data-bank_num="110-522-193955">
+					<span>복사</span>
+				</li>
+			</ul>
+			<ul class="family_members family_member_a family_member_a3" data-side="a" onclick="bank_view('brideParent')" >
+				<li class="name_block name_a2">최난영(혼주)<span style="margin-left: 10px;">기업 170-089126-02-033</span></li>
+				<li class="bank_txt_view_btn"
+					data-family_group_type="a"
+					data-name="최난영"
+					data-bank_name="기업은행"
+					data-bank_num="170-089126-02-033">
 					<span>복사</span>
 				</li>
 			</ul>
@@ -482,7 +492,12 @@ function bank_view(element) {
 		bankName= document.querySelector('.family_member_a1 .bank_txt_view_btn').dataset.bank_name;
 		bankNum = document.querySelector('.family_member_a1 .bank_txt_view_btn').dataset.bank_num;
 	  personName = document.querySelector('.family_member_a1 .bank_txt_view_btn').dataset.name;
-	} else{
+	} else if (element == "brideParent"){ 
+		roll = '신부(혼주)';
+		bankName= document.querySelector('.family_member_a3 .bank_txt_view_btn').dataset.bank_name;
+		bankNum = document.querySelector('.family_member_a3 .bank_txt_view_btn').dataset.bank_num;
+	  personName = document.querySelector('.family_member_a3 .bank_txt_view_btn').dataset.name;
+	}else{
 		roll = '신부';
 		bankName= document.querySelector('.family_member_a2 .bank_txt_view_btn').dataset.bank_name;
 		bankNum = document.querySelector('.family_member_a2 .bank_txt_view_btn').dataset.bank_num;
